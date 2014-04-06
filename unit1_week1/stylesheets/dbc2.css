@@ -5,8 +5,8 @@ body {
 #parent {
 	margin-right: 10%;
 	margin-left: 10%;
-	margin-bottom:5%;
-
+	margin-bottom: 5%;
+    position:absolute;
 }
 .header {
 	z-index:1;
@@ -56,16 +56,21 @@ body {
 }
 #kitteh {
 	position: relative;
-
+    width: 100%;
 }
-#caption {
+#imageText{
 	position: absolute;
-	bottom:50px;
-	right: 500px;
+	top: 100px;
+    bottom: -5%;
+	right: -40px;
+    width: 100%;
 	z-index: 2;
-	background: #FFFFEE;
 	font-style: italic;
-	})
+	}
+#captionBg{
+    background: #FFFFFF;
+    padding: 2px;
+}
 .italic{
 	font-style: italic;
 }
