@@ -25,6 +25,20 @@ body {
 
 
 }
+.footer{
+    z-index:1;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0px;
+    left:0; right: 0;
+    height: 10px;
+    text-align: right;
+    font-family: Trebuchet;
+    font-size: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
 .sidebar {
     position: relative;
     float:left;
