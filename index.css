@@ -1,10 +1,10 @@
 body{
 	background: #CCCCCC;
-	font-family: Trebuchet;
-	font-size: 10pt;
+	
+	
 	text-align: center;
 	width: 1024px;
-	min-height: 830px;
+	min-height: 800px;
 	max-height: 1472px;
 	min-width: 800px;
 }
@@ -22,6 +22,7 @@ nav{
 	overflow: hidden;
 	float: right;
 	text-align: center;
+	font-family: Trebuchet;
 
 }
 nav li{
@@ -53,17 +54,49 @@ nav li:hover{
 	margin: 0px;
 }
 #main{
+	text-align: left;
+	padding-left: 8px;
 	background-color: rgb(245, 245, 245);
 	float: left;
 	margin-top: 20px;
 	width: 1024px;
-	height: 768px;
-}
-
-#main h1{
+	height: 480px;
+	overflow: auto;
+	position: static;
+	font-family: Trebuchet;
 	font-size: 10pt;
 }
 
+#main h1{
+	font-size: 14pt;
+	font-family: 'Montserrat', sans-serif;
+}
+footer{
+	/*z-index:1;*/
+	position: static;
+	height:50px;
+	padding-right: 0px;
+	padding-top: 4px;
+	font-family: Georgia, sans-serif;
+}
+footer ul{
+	margin: 0px;
+	padding: 0px;
+}
+footer li{
+	list-style: none;
+	display: inline-block;
+	width:40px;
+	font-size: 14pt;
+	line-height: 30px;
+}
+footer p{
+	float: left;
+}
+.right{
+	float: right;
+	position: relative;
+}
 a:link{color:#000000; text-decoration: none;}
 a:visited{color:#000000; text-decoration:none;}
 a:hover{color:#FF0000; text-decoration: none;}
