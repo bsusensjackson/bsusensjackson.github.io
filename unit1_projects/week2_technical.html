@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>bsusensjackson</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/my_wireframe.css"/>
+  <!--<link rel="stylesheet" type="text/css" href="reset.css" /> -->
+  <link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../unit1_projects/font-awesome/css/font-awesome.min.css"/>
+
+	</head>
+<body>
+	<header>brendan susens-jackson...</header>
+  <nav>
+    <ul>
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>PORTFOLIO</li>
+      <li>CONTACT</li>
+      <li>BLOG</li>
+    </ul>
+  </nav>
+ 
+ <div id="main">
+  <h1>4.13.14</h1>
+  <p><h2>Display: Inline vs Block vs Inline Block </h2></p>
+  <p>When perusing the differences between div ids and classes, one inevitably comes across the confounding &quot;display: inline-block&quot; property of a CSS div.  Let&#39;s take a moment to examine this property, using some examples to help guide us. </p>
+  <p>Take a look at this  HTML: </p>
+  <img src="images/html_display.png"/>
+  <p>For our purposes here the HTML does not change. It is what is going on in the CSS that will make all the difference. </p>
+  <p><strong>Now let&#39;s get into that CSS:</strong></p>
+
+  <p>We&#39;ve  set the display to inline, like so (the other properties are there to help better visualize the example:</p>
+  <img src="images/css_display_inline.png"/>
+  <p>And look at the rendering in our browser:</p>
+    <img src="images/inline_result.png">
+  <p>As you can see, setting the display: inline makes the element tolerate other HTML that is next to it.  These are the big softies of your page, they don&#39;t want to make things go down to a new line.  They don&#39;t really care how close someone is standing next to it, they will happily comply.  However, as we can see, the height/width parameters that we specified were ignored. </p>
+  <p>OK, now how about if we sett the display to block? </p>
+  <img src="images/css_display_block.png"/> 
+  <p>Doing this produces this result: </p>
+  <img src="images/block_result.png"/>
+  <p>As you can see below, the &quot;Block&quot; mentality takes over, and the resultant divs are forced to a new line.   The height/ width settings that we outlined are utilized. </p>
+  <p>Now let&#39;s go ahead and change our display: inline-block in our CSS:</p>
+  <img src="images/css_inline_block.png"/>
+  <p>Here&#39;s where the magic happens:</p>
+  <img src="images/inline_block_result.png"/>
+  <p>The elements retain their &quot;block&quot; attributes, but are displayed inline!  Pretty neat, huh?  This is great for making customizable nav bars. </p>  
+
+ </div>
+  <footer><p> Copyright 2014 || Brendan Susens-Jackson</p>
+      <div class ="right">
+      <ul>
+        <li><a href="http://www.github.com/bsusensjackson" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="http://www.twitter.com/brendansjackson" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://www.linkedin.com/pub/brendan-susens-jackson/30/39/442" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="https://plus.google.com/+BrendanSusensJackson" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+    
+   </footer>
+
+</body></html>
