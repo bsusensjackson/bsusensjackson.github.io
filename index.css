@@ -23,13 +23,13 @@ nav{
 	float: right;
 	text-align: center;
 	font-family: Trebuchet;
-
+	
 }
 nav li{
 	position: relative;
 	list-style: none;
 	display: inline-block;
-	font-size: 1.1em;
+	font-size: 12pt;
 	padding: 0px;
 	margin:0px;
 	line-height: 33px;
@@ -56,11 +56,11 @@ nav li:hover{
 #main{
 	text-align: left;
 	padding-left: 8px;
-	background-color: rgb(245, 245, 245);
+	background-color: #F5F5F5;
 	float: left;
 	margin-top: 20px;
 	width: 1024px;
-	height: 480px;
+	height: auto;
 	overflow: auto;
 	position: static;
 	font-family: Trebuchet;
@@ -69,7 +69,7 @@ nav li:hover{
 
 #main h1{
 	font-size: 14pt;
-	font-family: 'Montserrat', sans-serif;
+	font-family: Georgia, sans-serif;
 }
 footer{
 	/*z-index:1;*/
@@ -78,6 +78,7 @@ footer{
 	padding-right: 0px;
 	padding-top: 4px;
 	font-family: Georgia, sans-serif;
+	font-size: 10pt;
 }
 footer ul{
 	margin: 0px;
@@ -92,6 +93,7 @@ footer li{
 }
 footer p{
 	float: left;
+	
 }
 .right{
 	float: right;
