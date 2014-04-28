@@ -99,6 +99,10 @@ footer p{
 	float: right;
 	position: relative;
 }
+.code{
+	font-family: Courier;
+	font-size: 12;
+}
 a:link{color:#000000; text-decoration: none;}
 a:visited{color:#000000; text-decoration:none;}
 a:hover{color:#FF0000; text-decoration: none;}
