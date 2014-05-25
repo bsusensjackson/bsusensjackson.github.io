@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>bsusensjackson</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/my_wireframe.css"/>
+  <!--<link rel="stylesheet" type="text/css" href="reset.css" /> -->
+  <link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../unit2_projects/font-awesome/css/font-awesome.min.css"/>
+
+	</head>
+<body>
+	<header>brendan susens-jackson...</header>
+  <nav>
+    <ul>
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>PORTFOLIO</li>
+      <li>CONTACT</li>
+      <li>BLOG</li>
+    </ul>
+  </nav>
+ 
+ <div id="main">
+  <h1>5.25.14</h1>
+  <h2>Intro to Recursion --</h2>
+  <p>I find recursion to be one of the most interesting concepts in programming, and yet it is also one of the hardest to know when to implement.  In this blog I&#39;m going to try and break down how recursion works, using Ruby to demonstrate.  I must give credit David Black for the first example, if you want to learn Ruby buy his book <a href="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657/ref=sr_1_1?ie=UTF8&qid=1401047878&sr=8-1&keywords=the+well+grounded+rubyist" target ="_blank">The Well Grounded Rubyist.</a> </p>
+  <p>Recursion is the process of a method calling on itself.  What is interesting about recursion is that it shows the differences between self and local scope: with recursion there is no change to self, but the variables that you are working with are reset.  Let&#39;s take a look at the following code:</p>
+  <p><span class = "code">>class C
+  <br>>def x(value_for_a, recurse=false)
+  <br>>  a = value_for_a
+  <br>>  print "Vale of 'a' for 'self' :"
+  <br>>  p self
+  <br>>  puts "And here's a:"
+  <br>>  puts a
+  <br>>  if recurse == true
+  <br>>    puts "Calling myself..."
+  <br>>    x("Second value for a")
+  <br>>    puts "Back after recursion: here's a:"
+  <br>>    puts a
+  <br>>  end
+  <br>>end
+<br>end
+<br>c = C.new
+<br>c.x("First value for a", true)</span>
+<p>This will output:
+<br><span class = "code">Here's the value for 'self' : #<C:0x21fea8>
+<br>And here's a:
+<br>First value for a
+<br>Calling myself...&quot;
+<br>Here's the value for 'self' : #<C:0x21fea8>
+<br>And here's a:
+<br>Second value for a
+<br>Back after recursion: here's a:
+<br>First value for a</span>
+<p>What you'll notice from this is that the instance method C#x takes two arguments, the value for a and a boolean flag (which prevents this from becoming an infinite recursion loop.)  As we make our way through the lines of the method, we get to the <span class="code">if recurse</span>, which will evaluate to true the first time around (since we passed the method the value true the first time around.  (You'll notice that the second method call for x has no value for the second argument, thus defaulting to false.)  As we make it through the second call of the method, the values of <span class="code">a</span> changes, but the self doesn't change.  Pretty cool stuff right? 
+
+
+ </div>
+  <footer><p> Copyright 2014 || Brendan Susens-Jackson</p>
+      <div class ="right">
+      <ul>
+        <li><a href="http://www.github.com/bsusensjackson" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="http://www.twitter.com/brendansjackson" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://www.linkedin.com/pub/brendan-susens-jackson/30/39/442" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="https://plus.google.com/+BrendanSusensJackson" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+    
+   </footer>
+
+</body></html>
