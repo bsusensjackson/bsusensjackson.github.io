@@ -10,20 +10,21 @@ body{
 	padding-left: 4px
 }
 header{
-	width: 870px;
+	width: 865px;
 	border-bottom-color: #000000;
-	border-bottom-style: 2px solid;
-	
+	border-bottom: 1px solid;
+	font-family: 'Miss Fajardose', cursive;
 	margin: 2px;
 	padding-top: 2px;
+	padding-left: 10px;
 }
 h1{
-	font-family: Trebuchet;
-	font-size: 18pt;
+	
+	font-size: 30pt;
 }
 h2{
 	font-family: Georgia;
-	font-size: 14pt;
+	font-size: 15pt;
 }
 h3{
 	font-family:Georgia;
@@ -33,6 +34,7 @@ h3{
 article{
 	font-family: Georgia;
 	font-size: 12pt;
+	padding-left: 10px;
 
 }
 
@@ -43,7 +45,7 @@ nav{
 	padding: 2px;
 	border: 1px dashed;
 	border
-	margin-right: 10px;
+	padding-right: 10px;
 }
 
 nav li{
