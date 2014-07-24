@@ -8,8 +8,11 @@ var hammer = Hammer(page).on("swiperight", function() {
     });
 var hammer2 = Hammer(page).on("swiperight", function() {
        $('#what').show()
-       $('what1').hide()
+       $('#what1').hide()
     });
+var hammer3 = Hammer(page).on("tap", function(){
+	$('#what2').text('hahahahaha')
+});
 
 
 });
