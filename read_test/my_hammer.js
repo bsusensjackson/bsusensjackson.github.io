@@ -6,7 +6,7 @@ var hammer = Hammer(page).on("swiperight", function() {
        // $('#what1').show();
     	$('#what').hide();
     });
-var hammer2 = Hammer(page).on("swiperight", function() {
+var hammer2 = Hammer(page).on("swipeleft", function() {
        $('#what').show()
        $('#what1').hide()
     });
