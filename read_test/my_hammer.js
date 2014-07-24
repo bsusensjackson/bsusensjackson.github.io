@@ -1,9 +1,15 @@
 $(function(){
 
-var box = document.getElementById("black_box")
-console.log(box)
-var hammer = Hammer(box).on("tap", function() {
-       $('#what').text("yolo")
+var page = document.getElementById("page")
+$('#what1').hide()
+var hammer = Hammer(page).on("swiperight", function() {
+       $('#what1').show();
+    	$('#what').hide();
     });
+var hammer = Hammer(page).on("swiperight", function() {
+       $('#what').show()
+       $('what1').hide()
+    });
+
 
 });
